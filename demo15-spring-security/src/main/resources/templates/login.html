@@ -1,0 +1,20 @@
+<!--
+ - FileName: login.html
+ - Author: My
+ - CreateTime: 2018/11/9 16:29
+ -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<form data-th-action="@{/login}" method="post">
+    <!--<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>-->
+    用户名：<input type="text" name="username"/><br/>
+    密码：<input type="password" name="password"/><br/>
+    <input type="submit" value="登录"/>
+</form>
+</body>
+</html>
